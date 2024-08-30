@@ -6,14 +6,10 @@
 **Program.cs**
 ```
 using ZeInjector;
-.
-.
-.
+...
 AccessPoint.ConfigureServices(builder.Services);
 var app = builder.Build();
-.
-.
-.
+...
 ```
 **When declaring repositories, services, etc.**
 **For Scoped Lifecycle**
