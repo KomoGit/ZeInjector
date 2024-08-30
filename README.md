@@ -24,3 +24,4 @@ public interface ITestRepository : ISingletonInjector<ITestRepository, TestRepos
 ```
 public interface ITestRepository : ITransientInjector<ITestRepository, TestRepository>
 ```
+Once configured, ZeInjector will automatically load the Repositories to services.
