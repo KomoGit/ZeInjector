@@ -15,3 +15,16 @@ var app = builder.Build();
 .
 .
 ```
+**When declaring repositories, services, etc.**
+**For Scoped Lifecycle**
+```
+public interface ITestRepository : IScopedInjector<ITestRepository, TestRepository
+```
+**For Singleton Lifecycle**
+```
+public interface ITestRepository : ISingletonInjector<ITestRepository, TestRepository
+```
+**For Transient Lifecycle**
+```
+public interface ITestRepository : ITransientInjector<ITestRepository, TestRepository
+```
